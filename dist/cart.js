@@ -92,7 +92,7 @@ let ppp = [
   // cart laptop in products page
 let laptops =[
     {
-        img: "../Images/products/laptop1.jpg",
+        img: "../Images/home/bp1.png",
         title: "Macbook",
         price: 2500
     },
@@ -103,8 +103,12 @@ let laptops =[
     },
 ];
 
+
+
 let laptop_cart = document.querySelector('#laptop');
-laptop_cart.innerHTML = '<h1>Hello</h1>'
+laptop_cart.addEventListener('click', () =>{
+    alert("Hello");
+});
 
 laptops.map( laptop => {
     laptop_cart.innerHTML += `
@@ -155,6 +159,5 @@ class="w-full  bg-white border border-gray-200 rounded-[5px] shadow dark:bg-gray
             to cart</a>
     </div>
 </div>
-</div>
-    `
+</div> `
 });
