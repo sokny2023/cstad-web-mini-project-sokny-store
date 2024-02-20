@@ -6,31 +6,31 @@ let ppp = [
     img: "../Images/home/pp1.jpg",
   },
   {
-    title: "Macbook",
+    title: "Iphone",
     img: "../Images/home/pp2.jpeg",
   },
   {
-    title: "Macbook",
+    title: "Samsung",
     img: "../Images/home/pp3.png",
   },
   {
-    title: "Macbook",
+    title: "Asus ROG",
     img: "../Images/home/pp4.jpg",
   },
   {
-    title: "Macbook",
+    title: "Lenovo",
     img: "../Images/home/pp5.jpg",
   },
   {
-    title: "Macbook",
+    title: "Dell Monitor",
     img: "../Images/home/pp6.jpg",
   },
   {
-    title: "Macbook",
+    title: "GPU",
     img: "../Images/home/pp7.jpg",
   },
   {
-    title: "Macbook",
+    title: "Headphone JBL",
     img: "../Images/home/pp8.png",
   },
 ];
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ppp.forEach(function(pp) { 
       pp_list.innerHTML += `
         <figure
-          class="pp-hover bg-gray-50 border border-primary-color/40 rounded-[5px] w-[90%] md:w-[100%] flex justify-center items-center relative hover:cursor-pointer"
+          class="pp-hover bg-gray-50 rounded-[5px] w-[90%] md:w-[100%] flex justify-center items-center relative hover:cursor-pointer"
           onmouseover="this.querySelector('.pp-name').style.display = 'block';"
           onmouseout="this.querySelector('.pp-name').style.display = 'none';">
           <img style="transition: 0.4s;" src="${pp.img}" alt=""
@@ -160,6 +160,7 @@ if (laptop_cart && laptops_array.length > 0) {
   }
 });
 
+
 // phone
 document.addEventListener("DOMContentLoaded", function () {
   // Define an array of laptops for demonstration. Replace with your actual array
@@ -184,7 +185,6 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Iphone 14",
       price: 899
     },
-    // Add more laptop objects here
   ];
 
   let phone_cart = document.querySelector("#phone");
