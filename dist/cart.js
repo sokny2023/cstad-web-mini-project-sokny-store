@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
           onmouseover="this.querySelector('.pp-name').style.display = 'block';"
           onmouseout="this.querySelector('.pp-name').style.display = 'none';">
           <img style="transition: 0.4s;" src="${pp.img}" alt=""
-              class="w-[100%] hover:opacity-70 hover:scale-95 rounded-[5px] hover:border-none hover:outline-none">
-          <figcaption style="display: none; transition: 0.4s;"
-              class="pp-name text-primary-color w-[100%] bg-on-primary text text-[30px] absolute bottom-[50%]">
+              class="w-[100%] hover:opacity-85 hover:scale-95 rounded-[5px] hover:border-none hover:outline-none">
+          <figcaption style="display: none; transition: 0.2s;"
+              class="pp-name text-on-primary w-[100%] bg-primary-color text text-[30px] absolute top-0 ">
               ${pp.title}</figcaption>
         </figure>
       `;
@@ -136,25 +136,25 @@ document.addEventListener("DOMContentLoaded", function () {
 if (laptop_cart && laptops_array.length > 0) {
     laptops_array.forEach(function(laptop) {
       laptop_cart.innerHTML += `
-<div class="w-full bg-white border border-gray-200 rounded-[5px] shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-    <img class="p-8 rounded-t-lg" src="${laptop.img}" alt="product image" />
-  </a>
-  <div class="px-5 pb-5">
-    <a href="#">
-      <h5 class="text-[20px] font-semibold tracking-tight text-gray-900 dark:text-white">${laptop.title}</h5>
-    </a>
-    <div class="flex items-center mt-2.5 mb-5">
-      <!-- Star ratings could be added here if needed -->
-    </div>
-    <div class="flex items-center justify-between">
-      <span class="text-3xl font-bold text-primary-color">$${laptop.price}</span>
-      <a href="#" class="text-white bg-primary-color hover:bg-primary-hover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[5px] text-sm px-5 py-2.5 text-center">Add to cart</a>
-    </div>
-  </div>
-</div>
-`;
-    });
+        <div class="w-full bg-white border border-gray-200 rounded-[5px] shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="p-8 rounded-t-lg" src="${laptop.img}" alt="product image" />
+          </a>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-[20px] font-semibold tracking-tight text-gray-900 dark:text-white">${laptop.title}</h5>
+            </a>
+            <div class="flex items-center mt-2.5 mb-5">
+              <!-- Star ratings could be added here if needed -->
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-3xl font-bold text-primary-color">$${laptop.price}</span>
+              <a href="#" class="text-white bg-primary-color hover:bg-primary-hover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[5px] text-sm px-5 py-2.5 text-center">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        `;
+      });
   } else {
     console.log("#laptop element not found or laptops_array is empty");
   }
@@ -192,24 +192,24 @@ document.addEventListener("DOMContentLoaded", function () {
 if (phone_cart && phone_array.length > 0) {
     phone_array.forEach(function(phone) {
       phone_cart.innerHTML += `
-<div class="w-full bg-white border border-gray-200 rounded-[5px] shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-    <img class="p-8 rounded-t-lg" src="${phone.img}" alt="product image" />
-  </a>
-  <div class="px-5 pb-5">
-    <a href="#">
-      <h5 class="text-[20px] font-semibold tracking-tight text-gray-900 dark:text-white">${phone.title}</h5>
-    </a>
-    <div class="flex items-center mt-2.5 mb-5">
-      <!-- Star ratings could be added here if needed -->
-    </div>
-    <div class="flex items-center justify-between">
-      <span class="text-3xl font-bold text-primary-color">$${phone.price}</span>
-      <a href="#" class="text-white bg-primary-color hover:bg-primary-hover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[5px] text-sm px-5 py-2.5 text-center">Add to cart</a>
-    </div>
-  </div>
-</div>
-`;
+        <div class="w-full bg-white border border-gray-200 rounded-[5px] shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="p-8 rounded-t-lg" src="${phone.img}" alt="product image" />
+          </a>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-[20px] font-semibold tracking-tight text-gray-900 dark:text-white">${phone.title}</h5>
+            </a>
+            <div class="flex items-center mt-2.5 mb-5">
+              <!-- Star ratings could be added here if needed -->
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-3xl font-bold text-primary-color">$${phone.price}</span>
+              <a href="#" class="text-white bg-primary-color hover:bg-primary-hover focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[5px] text-sm px-5 py-2.5 text-center">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      `;
     });
   } else {
     console.log("#phone element not found or laptops_array is empty");

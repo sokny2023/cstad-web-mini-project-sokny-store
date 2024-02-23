@@ -1,8 +1,5 @@
 let navbar = document.querySelector('#navbar'); // Use #navbar if navbar is an ID
 let hamburger = document.querySelector('#hamburger'); // Use #hamburger if
-let pp_hover = document.querySelector('.pp-hover'); // Use #pp if
-let pp_name = document.querySelector('.pp-name'); // Use #
-
 
 
 hamburger.addEventListener('click', () => {
@@ -12,15 +9,6 @@ hamburger.addEventListener('click', () => {
         navbar.style.display = "none";
       }
 });
-
-
-/*pp_hover.addEventListener('mouseover', () => {
-  pp_name.style.display = "block";
-});
-
-pp_hover.addEventListener('mouseout', () => {
-  pp_name.style.display = "none";
-});*/
 
 
 let footers = document.querySelector('footer');
