@@ -3,35 +3,35 @@
 let ppp = [
   {
     title: "Macbook",
-    img: "../Images/home/pp1.jpg",
+    img: "./Images/home/pp1.jpg",
   },
   {
     title: "Iphone",
-    img: "../Images/home/pp2.jpeg",
+    img: "./Images/home/pp2.jpeg",
   },
   {
     title: "Samsung",
-    img: "../Images/home/pp3.png",
+    img: "./Images/home/pp3.png",
   },
   {
     title: "Asus ROG",
-    img: "../Images/home/pp4.jpg",
+    img: "./Images/home/pp4.jpg",
   },
   {
     title: "Lenovo",
-    img: "../Images/home/pp5.jpg",
+    img: "./Images/home/pp5.jpg",
   },
   {
     title: "Dell Monitor",
-    img: "../Images/home/pp6.jpg",
+    img: "./Images/home/pp6.jpg",
   },
   {
     title: "GPU",
-    img: "../Images/home/pp7.jpg",
+    img: "./Images/home/pp7.jpg",
   },
   {
     title: "Headphone JBL",
-    img: "../Images/home/pp8.png",
+    img: "./Images/home/pp8.png",
   },
 ];
 
