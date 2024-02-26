@@ -64,22 +64,22 @@ let block_prodcuts_array = [
   {
     title: "Laptop",
     dest: "MacBook, Asus, Lenovo, MSI...",
-    img: "../Images/home/bp1.png",
+    img: "./Images/home/bp1.png",
   },
   {
     title: "Monitor",
     dest: "Apple, Asus, Lenovo, MSI...",
-    img: "../Images/home/bp2.png",
+    img: "./Images/home/bp2.png",
   },
   {
     title: "Phone",
     dest: "Iphone Samsung Oppo...",
-    img: "../Images/home/bp3.png",
+    img: "./Images/home/bp3.png",
   },
   {
     title: "Headphone",
     dest: "JBL Sony, Apple...",
-    img: "../Images/home/bp4.png",
+    img: "./Images/home/bp4.png",
   },
 ];
 
